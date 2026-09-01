@@ -32,7 +32,7 @@ const certifications = [
 function CertificationCard({ cert, index, isVisible }: { cert: typeof certifications[0]; index: number; isVisible: boolean }) {
   return (
     <div 
-      className={`group p-6 lg:p-8 rounded-2xl bg-card border border-border transition-all duration-700 hover:border-primary/50 ${
+      className={`group p-6 lg:p-8 rounded-2xl glass-panel tilt-card transition-all duration-700 hover:border-primary/50 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
       style={{ transitionDelay: `${index * 150}ms` }}

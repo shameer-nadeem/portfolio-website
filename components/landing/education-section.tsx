@@ -64,7 +64,7 @@ export function EducationSection() {
 
         {/* Education Card */}
         <div 
-          className={`max-w-4xl mx-auto p-8 lg:p-12 rounded-2xl bg-card border border-border transition-all duration-700 hover:border-primary/50 ${
+          className={`max-w-4xl mx-auto p-8 lg:p-12 rounded-2xl glass-panel tilt-card transition-all duration-700 hover:border-primary/50 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

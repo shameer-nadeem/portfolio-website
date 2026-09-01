@@ -199,11 +199,27 @@
   }
 
   .glass-panel {
+    position: relative;
+    overflow: hidden;
     background: color-mix(in oklch, var(--card) 78%, transparent);
     border: 1px solid color-mix(in oklch, var(--primary) 18%, transparent);
     box-shadow: inset 0 1px 0 color-mix(in oklch, white 8%, transparent), 0 24px 80px color-mix(in oklch, black 24%, transparent);
     backdrop-filter: blur(18px);
+    transition: border-color 300ms ease, box-shadow 300ms ease, transform 300ms ease;
+    will-change: transform;
   }
+
+  .glass-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--shine-x, 50%) var(--shine-y, 0%), color-mix(in oklch, var(--primary) 14%, transparent), transparent 28%);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+
+  .glass-panel:hover::before { opacity: 1; }
 
   .glass-panel:hover {
     border-color: color-mix(in oklch, var(--primary) 45%, transparent);

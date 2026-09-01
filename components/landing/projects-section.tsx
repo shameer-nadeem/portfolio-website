@@ -43,7 +43,7 @@ export function ProjectsSection() {
 
         {/* Coming Soon Card */}
         <div 
-          className={`relative overflow-hidden rounded-2xl border border-border bg-card p-12 lg:p-16 transition-all duration-700 ${
+          className={`relative overflow-hidden rounded-2xl glass-panel tilt-card p-12 lg:p-16 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

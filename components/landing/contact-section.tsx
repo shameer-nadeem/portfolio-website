@@ -118,7 +118,7 @@ export function ContactSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <form className="p-8 lg:p-10 rounded-2xl bg-card border border-border">
+            <form className="p-8 lg:p-10 rounded-2xl glass-panel tilt-card">
               <h3 className="text-xl font-display mb-6">Send a Message</h3>
               
               <div className="space-y-6">
