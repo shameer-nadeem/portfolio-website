@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
+import { WireframeCube } from "./wireframe-cube";
 
 const roles = ["build", "secure", "innovate", "code"];
 
@@ -24,8 +25,9 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Animated sphere background */}
+      {/* Interactive wireframe + animated sphere background */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] opacity-40 pointer-events-none">
+        <WireframeCube />
         <AnimatedSphere />
       </div>
       

@@ -8,10 +8,12 @@ import { ExperienceSection } from "@/components/landing/experience-section";
 import { CertificationsSection } from "@/components/landing/certifications-section";
 import { ContactSection } from "@/components/landing/contact-section";
 import { FooterSection } from "@/components/landing/footer-section";
+import { InteractionLayer } from "@/components/landing/interaction-layer";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden noise-overlay">
+      <InteractionLayer />
       <Navigation />
       <HeroSection />
       <AboutSection />
